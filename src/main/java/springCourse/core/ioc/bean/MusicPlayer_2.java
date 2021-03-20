@@ -1,19 +1,16 @@
-package springCourse.core.ioc;
+package springCourse.core.ioc.bean;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import springCourse.core.ioc.Bean.ClassicalMusic;
-import springCourse.core.ioc.Bean.RockMusic;
-import springCourse.core.ioc.Enums.Janre;
+import springCourse.core.ioc.Music;
+import springCourse.core.ioc.enums.Janre;
 
-import javax.print.DocFlavor;
-import java.awt.image.VolatileImage;
 import java.util.ArrayList;
 import java.util.Random;
 
-@Component
+//@Component
 public class MusicPlayer_2 {
     @Value("${musicPlayer.name}")
     private String name;
@@ -23,7 +20,7 @@ public class MusicPlayer_2 {
     private Music music1;
     private Music music2;
 
-    @Autowired
+   // @Autowired
     public MusicPlayer_2(@Qualifier("classicalMusic") Music music1,
                          @Qualifier("rockMusic") Music music2) {
         this.music1 = music1;

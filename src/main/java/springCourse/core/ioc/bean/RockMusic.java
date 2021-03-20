@@ -1,15 +1,12 @@
-package springCourse.core.ioc.Bean;
+package springCourse.core.ioc.bean;
 
 import org.springframework.stereotype.Component;
 import springCourse.core.ioc.Music;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-import javax.print.DocFlavor;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-@Component
+//@Component
 public class RockMusic implements Music {
     ArrayList <String> listMusic=new ArrayList<>(Arrays.asList("bring me to floor",
             "Ups mme to heaven",

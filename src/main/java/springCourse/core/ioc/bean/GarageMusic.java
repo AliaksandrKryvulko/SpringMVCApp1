@@ -1,6 +1,5 @@
-package springCourse.core.ioc.Bean;
+package springCourse.core.ioc.bean;
 
-import org.springframework.stereotype.Component;
 import springCourse.core.ioc.Music;
 
 import java.util.ArrayList;
@@ -8,11 +7,11 @@ import java.util.Arrays;
 
 //@Component
 public class GarageMusic implements Music {
-    ArrayList<String> listMusic=new ArrayList<>(Arrays.asList("gARAGE GARAGE"));
+    ArrayList<String> listMusic=new ArrayList<>(Arrays.asList("gARAGE GARAGE", "voyage voyage"));
 
     @Override
     public ArrayList<String> getListSong() {
-        return null;
+        return listMusic;
     }
 
 }

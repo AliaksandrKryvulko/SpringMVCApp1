@@ -1,4 +1,4 @@
-package springCourse.core.ioc.Bean;
+package springCourse.core.ioc.bean;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
@@ -9,8 +9,8 @@ import java.util.Arrays;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-@Component
-@Scope("prototype")
+/*@Component
+@Scope("prototype")*/
 public class ClassicalMusic implements Music {
 
 @PostConstruct
@@ -22,7 +22,7 @@ public class ClassicalMusic implements Music {
             "Time of seasons",
             "Awakening Nature"));
 
-    private ClassicalMusic() {
+    public ClassicalMusic() {
     }
 
     public static ClassicalMusic getClassicalMusic() {

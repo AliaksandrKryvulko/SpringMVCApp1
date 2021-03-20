@@ -1,9 +1,4 @@
-package springCourse.core.ioc.TestingRunner;
-
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import springCourse.core.ioc.Bean.ClassicalMusic;
-import springCourse.core.ioc.MusicPlayer;
-import springCourse.core.ioc.Bean.RockMusic;
+package springCourse.core.ioc.testingRunner;
 
 public class TestSpringIoc {
     public static void main(String[] args) {

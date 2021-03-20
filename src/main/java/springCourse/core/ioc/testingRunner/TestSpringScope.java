@@ -1,12 +1,12 @@
-package springCourse.core.ioc.TestingRunner;
+package springCourse.core.ioc.testingRunner;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import springCourse.core.ioc.MusicPlayer;
+import springCourse.core.ioc.bean.MusicPlayer;
 
 public class TestSpringScope {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext(
-                "applicationContextIoc.xml");
+                "springCourse/core/garbage/applicationContextIoc.xml");
         MusicPlayer firstMusicPlayer=context.getBean("MusicPlayer", MusicPlayer.class);
         MusicPlayer secondMusicPlayer=context.getBean("MusicPlayer", MusicPlayer.class);
         boolean comparison= firstMusicPlayer== secondMusicPlayer;

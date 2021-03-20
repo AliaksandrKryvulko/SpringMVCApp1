@@ -1,4 +1,4 @@
-package springCourse.core.ioc.Enums;
+package springCourse.core.ioc.enums;
 
 public enum Janre {
     CLASSICAL,

@@ -12,7 +12,7 @@
 <!--    <context:component-scan base-package="springCourse.core.ioc"/>-->
 
 <!--    <bean id="ClassicalMusicBean" scope="prototype"
-          class="springCourse.core.ioc.Bean.ClassicalMusic "
+          class="springCourse.core.ioc.bean.ClassicalMusic "
           init-method="doMyInit"
           destroy-method="doMyDestroy"
           factory-method="getClassicalMusic">
@@ -25,17 +25,17 @@
     </util:list>
 
     <bean id="RockMusicBean"
-          class="springCourse.core.ioc.Bean.RockMusic ">
+          class="springCourse.core.ioc.bean.RockMusic ">
         &lt;!&ndash;  init-method="doMyInit"
           destroy-method="doMyDestroy">&ndash;&gt;
     </bean>
 
     <bean id="GarageMusicBean"
-          class="springCourse.core.ioc.Bean.GarageMusic ">
+          class="springCourse.core.ioc.bean.GarageMusic ">
     </bean>
 
     <bean id="MusicPlayer" scope="prototype"
-          class="springCourse.core.ioc.MusicPlayer">
+          class="springCourse.core.ioc.bean.MusicPlayer">
         &lt;!&ndash;(using with constructor)   constructor-arg ref="musicBean"/&ndash;&gt;
         <property name="music" ref="ClassicalMusicBean"/>
         <property name="name" value="${musicPlayer.name}"/>

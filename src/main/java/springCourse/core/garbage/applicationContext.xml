@@ -7,7 +7,7 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
     <context:component-scan base-package="springCourse.core.ioc"/>
-    <context:property-placeholder location="musicPlayer.properties"/>
+   <!-- <context:property-placeholder location="../../../../resources/musicPlayer.properties"/>-->
 
     <bean id="testBean"
           class="springCourse.core.TestBean">
